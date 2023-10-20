@@ -1,24 +1,32 @@
 <?php
-    //? string
+    # string
     $nombre = 'Carlos'; // ''   !=  ""
-    //? int
+    # int
     $numero = 322;
-    //? double
+    # double
     $numero_decimal = 322.322;
-    //? boolean
+    # boolean
     $verdadero = true;
-    //! array
-    //! object
-    //! class
-    //! null
 
-    echo $nombre;
-    echo $numero;
-    echo $numero_decimal;
-    echo "hola sol $nombre"; // permite usar variables
-    echo 'hola sol $nombre';
-    echo 'hola sol ' . $nombre;
+    # Array
+    # Object
+    # Class
+    # Null
+?>
 
+<?php echo $nombre; ?>
+<br>
+<?php echo $numero; ?>
+<br>
+<?php echo $numero_decimal; ?>
+<br>
+<?php 
+    echo "hola sol $nombre";    # permite usar variables
+    echo 'hola sol $nombre';    # no permite
+    echo 'hola sol ' . $nombre; # concatenar en php .
+?>
+<br>
+<?php 
     echo gettype($nombre);
     echo gettype($numero);
     echo gettype($verdadero);

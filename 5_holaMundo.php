@@ -3,7 +3,9 @@
     echo "Hola sol con php";
 
     //echo muestra informacion en pantalla
+    
     # otro comentario
+    
     /*
         muchos comentarios
     */
@@ -19,6 +21,6 @@
 </head>
 <body>
     <h1>Hola sol con html</h1>
-    <h2><?php echo "hola sol con php"  ?></h2>
+    <h2><?php echo "hola sol con php dentro del HTML"?></h2>
 </body>
 </html>
