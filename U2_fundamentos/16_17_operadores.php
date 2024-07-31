@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /* Operadores Aritméticos:
 
@@ -28,7 +28,7 @@
 // $numero = 10;
 // $numero2 = 5;
 
-// // $numero = $numero + 7;
+// $numero = $numero + 7;
 // $numero += 7;
 // echo $numero;
 
@@ -92,5 +92,3 @@ $texto = 'Cadena de Texto';
 $texto .= ' Una segunda Cadena de Texto';
 
 echo $texto;
-
-?>
