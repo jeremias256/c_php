@@ -21,30 +21,22 @@
 
     <section class="fotos">
         <div class="contenedor">
-            <div class="thumb">
-                <a href="#">
-                    <img alt="1" src="imagenes/1.jpg" />
-                </a>
-            </div>
-            <div class="thumb">
-                <a href="#">
-                    <img alt="1" src="imagenes/2.jpg" />
-                </a>
-            </div>
-            <div class="thumb">
-                <a href="#">
-                    <img alt="1" src="imagenes/3.jpg" />
-                </a>
-            </div>
-            <div class="thumb">
-                <a href="#">
-                    <img alt="1" src="imagenes/4.jpg" />
-                </a>
-            </div>
+            <?php foreach ($fotos as $foto) : ?>
+                <div class="thumb">
+                    <a href="/curso-php/U13_galeria/foto.php?p=<?php echo $foto['id']; ?>">
+                        <img alt="1" src="/curso-php/U13_galeria/fotos/<?php echo $foto['imagen']; ?>" />
+                    </a>
+                </div>
+            <?php endforeach; ?>
 
             <div class="paginacion">
-                <a href="#" class="izquierda"><i class="fa fa-long-arrow-left"></i> Página anterior</a>
-                <a href="#" class="derecha"><i class="fa fa-long-arrow-right"></i> Página siguiente</a>
+                <?php if ($pagina_actual > 1): ?>
+                    <a href="/curso-php/U13_galeria/index.php?p=<?php echo $pagina_actual - 1; ?>" class="izquierda"><i class="fa fa-long-arrow-left"></i> Página anterior</a>
+                <?php endif; ?>
+
+                <?php if ($total_paginas != $pagina_actual): ?>
+                    <a href="/curso-php/U13_galeria/index.php?p=<?php echo $pagina_actual + 1; ?>" class="derecha"><i class="fa fa-long-arrow-right"></i> Página siguiente</a>
+                <?php endif; ?>
             </div>
         </div>
     </section>

@@ -15,20 +15,20 @@
 <body>
     <header>
         <div class="contenedor">
-            <h1 class="titulo">Foto 1</h1>
+            <h1 class="titulo">Foto <?php echo !empty($foto['titulo']) ? $foto['titulo'] : $foto['imagen']; ?></h1>
         </div>
     </header>
 
     <div class="contenedor">
         <div class="foto">
-            <img alt="img" src="imagenes/1.jpg" />
+            <img alt="img" src="/curso-php/U13_galeria/fotos/<?php echo $foto['imagen']; ?>" />
             <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corrupti</p>
             <a class="regresar" href="index.php"><i class="fa fa-long-arrow-left"></i> Regresar</a>
         </div>
     </div>
 
     <footer>
-        <p class="copyright">Galeria creada Jeremias</p>
+        <p class="copyright">Galeria creada por Jeremias</p>
     </footer>
 </body>
 
